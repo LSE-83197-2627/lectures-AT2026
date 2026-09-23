@@ -50,7 +50,7 @@ The main course texts will be:
 Additional resources include:
 * [Intermediate and advanced Python documentation](http://docs.python.org/3/)
 * [Python Wikibook](https://en.wikibooks.org/wiki/Python_Programming)
-* Matthes, Eric. [*Python Crash Course Cheat Sheet*](https://ehmatthes.github.io/pcc/cheatsheets/README.html).
+* Matthes, Eric. [*Python Crash Course Cheat Sheet*](https://ehmatthes.github.io/pcc_2e/cheat_sheets/cheat_sheets/).
 * [Mimo](https://mimo.org/courses/learn-python): Like Duolingo, but for Python (and other programming languages)
 
 ## Assessment
@@ -75,7 +75,13 @@ Your code will be evaluated both on whether it completes the task and on the ext
 |Distinction (70-100) |The code runs, does what it is expected to, and is modular, legible, and optimized |
 
 
-## Collaboration, Plagiarism, and AI Policy
+## AI Policy
+
+LSE asks academic departments or course convenors to specify one of three possible positions on the authorised use of generative AI in assessment. This course takes position 1: **No authorised use of generative AI in assessment**, unless the convenor specifies otherwise. The use of AI tools for grammar and spell-checking is not included in the full prohibition under Position 1.
+
+This means that you are not allowed to use Generative AI tools such as ChatGPT, Claude or Copilot to solve the problem sets.
+
+## Collaboration and Plagiarism Policy
 
 In-term problem sets and the final quiz are individual unless we instruct you otherwise. For all summative assessment, you need to write the code entirely by yourself (or together with your partner if you have been assigned one).
 
@@ -85,7 +91,6 @@ In-term problem sets and the final quiz are individual unless we instruct you ot
 * View and copy code from other students (current or past)
 * View and copy example solutions that may have leaked
 * Ask friends, family, or roommates for help with problem sets
-* Use Generative AI tools such as ChatGPT and Copilot to solve the problem sets (unless we instruct you otherwise)
 * Post questions related to the problem sets on Q&A sites such as Stack Overflow
 
 **You may:**
@@ -135,7 +140,7 @@ In the first week, we will introduce the basic concepts in computer programming:
 * [*Course information*](wk1/MY470_wk1_admin.ipynb)
 * *Readings*
   * Guttag. Chapters 1-2.1, pp.1–15.
-  * Wing, Jeannette M. (2006). [Computational thinking](http://tech-insider.org/academia/research/acrobat/0603.pdf). *Communications of the ACM*, 49(3), 33–35.
+  * Wing, Jeannette M. (2006). [Computational thinking](https://dl.acm.org/doi/pdf/10.1145/1118178.1118215). *Communications of the ACM*, 49(3), 33–35.
 * [*Lecture*](wk1/MY470_wk1_lecture.ipynb)
 * [*Lab*](wk1/MY470_wk1_class.ipynb)
   * Installing Python with Anaconda
