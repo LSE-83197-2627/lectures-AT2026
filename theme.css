@@ -1,5 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400&display=swap');
+
+/* Palette. Sage green carries the structure (headings, links, bullets, chrome).
+   A warm clay, its complement, is kept for highlights: code cards (as a pale
+   tint), bold text, and math.
+     green  #4f6e51 dark / #7cb083 mid / #a8cdae light
+     clay   #b0603a strong / #f7efe6 tint / #e8d9c8 tint border */
 
 /* Base */
 .reveal-viewport, .reveal, .reveal .slides {
@@ -31,21 +38,94 @@
 .reveal h3, .reveal .jp-RenderedHTMLCommon h3 { font-size: 1.45em; }
 .reveal h4, .reveal .jp-RenderedHTMLCommon h4 { font-size: 1.15em; }
 
-/* Slideshow chrome: reveal's navigation arrows and progress bar, and the
-   JupyterLab collapser bar down the left of each cell. */
+/* Title slide: the one cell with an h1 and h3s around it (course, title, week).
+   Only the h1 stays serif; the h3s become quieter sans-serif lines. Section
+   slides with a lone h1 are unaffected. */
+.reveal .jp-RenderedHTMLCommon:has(> h1) > h3 {
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-weight: 400;
+  font-size: 1.15em;
+  color: #5f5f5f;
+}
+
+/* Slideshow chrome: reveal's navigation arrows and progress bar. */
 .reveal .controls { color: #7cb083; }
 /* reveal's own rule wins without !important here. */
 .reveal .progress span { background-color: #7cb083 !important; }
 
-.reveal .jp-Collapser { background: #fafafa !important; }
-.reveal .jp-Collapser:hover { background: #a8cdae !important; }
+/* JupyterLab chrome that has no place on a slide: the collapser bar down the
+   left of each cell (which also marks the active cell, including markdown
+   cells), the cell toolbar, the scroll toggle that appears when hovering an
+   output, and the focus outline on the selected cell. */
+.reveal .jp-Collapser,
+.reveal .jp-cell-toolbar,
+.reveal .jp-OutputArea-promptOverlay { display: none !important; }
+.reveal .jp-Cell:focus, .reveal .jp-Cell:focus-visible { outline: none; }
 
-/* Code cell chrome: the "[ ]:" prompt, and the border and glow on the cell
-   being edited, all of which are blue by default. */
+/* Collapsing a heading while editing (the triangle next to it) is saved in the
+   notebook and hides every cell below it up to the next heading of the same
+   level, which RISE honours, so whole slides go blank. Slides always show them. */
+.reveal .jp-Cell.lm-mod-hidden { display: block !important; }
+.reveal .jp-showHiddenCellsButton,
+.reveal .jp-collapseHeadingButton { display: none !important; }
+.reveal .jp-Notebook .jp-Cell.jp-mod-selected,
+.reveal .jp-Cell.jp-mod-active { background: transparent !important; }
+
+/* Code cells as cards: pale clay background, rounded corners, thin border. The
+   border turns green only while the cell is being edited. JupyterLab paints
+   the editor through these variables, so they are set rather than overridden. */
 :root {
+  --jp-code-font-family: "JetBrains Mono", "Fira Code", Menlo, monospace;
   --jp-cell-inprompt-font-color: #7cb083;
+  --jp-cell-editor-background: #f7efe6;
+  --jp-cell-editor-active-background: #f7efe6;
+  --jp-cell-editor-border-color: #e8d9c8;
   --jp-cell-editor-active-border-color: #7cb083;
-  --jp-cell-editor-box-shadow: inset 0 0 2px #a8cdae;
+  --jp-cell-editor-box-shadow: 0 0 0 3px rgba(124, 176, 131, 0.18);
+}
+/* Spacing around cells is in px: inside reveal the cell containers carry a
+   very large font size, so em values come out several times too big. */
+.reveal .jp-InputArea-editor {
+  border-radius: 8px;
+  padding: 6px 8px;
+}
+.reveal .jp-Cell { padding-top: 6px; padding-bottom: 6px; }
+
+/* Outputs set apart: a white panel under the code with a green accent line
+   on the left, lined up with the card above. Error output keeps JupyterLab's
+   red background so mistakes still stand out. */
+.reveal .jp-OutputArea-output {
+  margin-top: 6px;
+  padding: 8px 14px;
+  background: #ffffff;
+  border-left: 3px solid #a8cdae;
+  border-radius: 0 6px 6px 0;
+}
+.reveal .jp-OutputArea-output[data-mime-type="application/vnd.jupyter.stderr"] {
+  background: var(--jp-rendermime-error-background);
+  border-left-color: #d9534f;
+}
+/* Cells with "scrolled" in their metadata (set by toggling output scrolling)
+   show their output in a resizable box with an inset shadow; on a slide the
+   output is always shown in full. */
+.reveal .jp-CodeCell.jp-mod-outputsScrolled {
+  --jp-private-cell-scrolling-output-offset: 0px;
+}
+.reveal .jp-CodeCell.jp-mod-outputsScrolled .jp-Cell-outputArea {
+  height: auto !important;
+  max-height: none;
+  overflow: visible;
+  resize: none;
+}
+.reveal .jp-CodeCell.jp-mod-outputsScrolled .jp-Cell-outputArea::after { display: none; }
+.reveal .jp-CodeCell.jp-mod-outputsScrolled .jp-OutputArea-child { padding-top: 0; }
+/* reveal styles every pre (centred, 90% wide, generic monospace); undo that. */
+.reveal .jp-OutputArea-output pre {
+  margin: 0;
+  padding: 0;
+  width: auto;
+  box-shadow: none;
+  font-family: var(--jp-code-font-family);
 }
 
 /* Links and inline code. JupyterLab styles :link, :visited and :hover
@@ -57,12 +137,38 @@
   --jp-content-link-hover-color: #4f6e51;
 }
 .reveal a, .reveal .jp-RenderedHTMLCommon a:link { color: #7cb083; }
-.reveal code, .reveal .jp-RenderedHTMLCommon code { color: #5f5f5f; }
+.reveal code, .reveal .jp-RenderedHTMLCommon code {
+  font-family: var(--jp-code-font-family);
+  font-size: 0.85em;
+  color: #5f5f5f;
+}
+/* Inline code in markdown gets a small pill; code blocks keep their own box. */
+.reveal .jp-RenderedHTMLCommon :not(pre) > code {
+  padding: 0.1em 0.35em;
+  border-radius: 4px;
+  background: #f7efe6;
+}
+
+/* Bold text is the slides' emphasis, so it takes the accent colour. */
+.reveal .jp-RenderedHTMLCommon strong { color: #b0603a; }
+
+/* Lists: less indentation, a little air between items, muted green discs, and
+   dashes instead of JupyterLab's squares for nested items. */
+.reveal .jp-RenderedHTMLCommon ul,
+.reveal .jp-RenderedHTMLCommon ol { padding-left: 1.3em; }
+.reveal .jp-RenderedHTMLCommon li { margin-bottom: 0.35em; padding-left: 0.2em; }
+.reveal .jp-RenderedHTMLCommon li > ul,
+.reveal .jp-RenderedHTMLCommon li > ol { margin-top: 0.35em; margin-left: 0; }
+.reveal .jp-RenderedHTMLCommon ul { list-style-type: disc; }
+.reveal .jp-RenderedHTMLCommon ul ul { list-style-type: "–"; }
+.reveal .jp-RenderedHTMLCommon ul ul > li { padding-left: 0.4em; }
+.reveal .jp-RenderedHTMLCommon li::marker { color: #7cb083; }
+.reveal .jp-RenderedHTMLCommon p { margin-bottom: 0.7em; }
 
 /* Math (MathJax 2/3, KaTeX) */
 .reveal .MathJax, .reveal .MathJax_Display, .reveal mjx-container,
 .reveal .mjx-math, .reveal .katex {
-  color: #c47a2a !important;
+  color: #b0603a !important;
 }
 
 /* Helper classes, usable in markdown as <span class="hl-green"> or <div class="goal"> */
