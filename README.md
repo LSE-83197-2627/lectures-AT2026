@@ -98,17 +98,17 @@ Violation of the plagiarism policy for the course will be dealt with in accordan
 
 **Questions about the content:**
 * Ask during the lecture sessions or your seminar
-* Schedule office hours with Milena, Daniel, or Yuanmo
+* Schedule office hours with Oliver, Zach, or Ed
 
 **Questions about the upcoming problem set:**
 * Post a question on the Moodle forum "Clarifying questions about assignments" (no code allowed!)
 
 **Questions about your marked problem set:**
 * See the example answers to help you understand the comments
-* Schedule office hours with Milena, Daniel, or Yuanmo
+* Schedule office hours with Oliver, Zach, or Ed
 
 **Personal emergencies (e.g. cannot access the problem set, cannot meet a deadline):**
-* E-mail Milena
+* E-mail Oliver
 
 
 ## Schedule
