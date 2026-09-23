@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+
+/* Base */
+.reveal-viewport, .reveal, .reveal .slides {
+  background-color: #fafafa;
+}
+
+/* Side margins, so content does not run edge to edge. RISE wraps each slide in
+   an outer section.stack, so this targets the inner one to avoid double padding
+   and to keep code cells from overflowing to the right. */
+.reveal .slides section:not(.stack) {
+  box-sizing: border-box;
+  padding-left: 8%;
+  padding-right: 8%;
+}
+.reveal, .reveal .jp-RenderedHTMLCommon {
+  font-family: "Atkinson Hyperlegible", sans-serif;
+}
+
+/* Headings */
+.reveal h1, .reveal h2, .reveal h3, .reveal h4,
+.reveal .jp-RenderedHTMLCommon h1, .reveal .jp-RenderedHTMLCommon h2,
+.reveal .jp-RenderedHTMLCommon h3, .reveal .jp-RenderedHTMLCommon h4 {
+  font-family: "Merriweather", Georgia, serif;
+  color: #4f6e51;
+  margin-bottom: 0.8em;
+}
+.reveal h1, .reveal .jp-RenderedHTMLCommon h1 { font-size: 2.4em; }
+.reveal h2, .reveal .jp-RenderedHTMLCommon h2 { font-size: 1.9em; }
+.reveal h3, .reveal .jp-RenderedHTMLCommon h3 { font-size: 1.45em; }
+.reveal h4, .reveal .jp-RenderedHTMLCommon h4 { font-size: 1.15em; }
+
+/* Slideshow chrome: reveal's navigation arrows and progress bar, and the
+   JupyterLab collapser bar down the left of each cell. */
+.reveal .controls { color: #7cb083; }
+/* reveal's own rule wins without !important here. */
+.reveal .progress span { background-color: #7cb083 !important; }
+
+.reveal .jp-Collapser { background: #fafafa !important; }
+.reveal .jp-Collapser:hover { background: #a8cdae !important; }
+
+/* Code cell chrome: the "[ ]:" prompt, and the border and glow on the cell
+   being edited, all of which are blue by default. */
+:root {
+  --jp-cell-inprompt-font-color: #7cb083;
+  --jp-cell-editor-active-border-color: #7cb083;
+  --jp-cell-editor-box-shadow: inset 0 0 2px #a8cdae;
+}
+
+/* Links and inline code. JupyterLab styles :link, :visited and :hover
+   separately, so setting the variables keeps all three states green — otherwise
+   a link turns blue once visited, and again on hover. */
+:root {
+  --jp-content-link-color: #7cb083;
+  --jp-content-link-visited-color: #7cb083;
+  --jp-content-link-hover-color: #4f6e51;
+}
+.reveal a, .reveal .jp-RenderedHTMLCommon a:link { color: #7cb083; }
+.reveal code, .reveal .jp-RenderedHTMLCommon code { color: #5f5f5f; }
+
+/* Math (MathJax 2/3, KaTeX) */
+.reveal .MathJax, .reveal .MathJax_Display, .reveal mjx-container,
+.reveal .mjx-math, .reveal .katex {
+  color: #c47a2a !important;
+}
+
+/* Helper classes, usable in markdown as <span class="hl-green"> or <div class="goal"> */
+details > summary { font-size: 0.75em; }
+.small { font-size: 0.75em; }
+
+.reveal .in-out {
+  margin: 0.5em 0;
+  padding: 0.1em 0 0.1em 1em;
+  background: #E8E8E8;
+  font-family: monospace;
+  font-size: 0.6em;
+}
+.reveal .goal {
+  margin: 0.5em 0;
+  padding: 0.1em 0 0.1em 1em;
+  background: #ccddeb;
+}
+
+.reveal .hl, .reveal .hl-green, .reveal .hl-yellow, .reveal .hl-blue, .reveal .hl-orange {
+  padding: 0.1em 0.3em;
+  border-radius: 3px;
+}
+.reveal .hl, .reveal .hl-green { background-color: #d4edda; }
+.reveal .hl-yellow { background-color: #fff3cd; }
+.reveal .hl-blue { background-color: #cfe2ff; }
+.reveal .hl-orange { background-color: #ffe5cc; }
+
+/* Presenting sizes. JupyterLab sizes code through these variables, so setting
+   them is more reliable than targeting the editor's own classes. */
+:root { --jp-code-font-size: 20px; --jp-code-line-height: 1.5; }
+.reveal .jp-RenderedHTMLCommon { font-size: 26px; line-height: 1.5; }
+/* Output text is much smaller than input code by default; the pre carries its
+   own size, so setting it on the output container alone has no effect. */
+.reveal .jp-OutputArea-output pre, .reveal .jp-RenderedText pre { font-size: 22px; }
+/* JupyterLab sets tables to its small UI font, ignoring the body size above. */
+.reveal .jp-RenderedHTMLCommon table { font-size: 22px; }
