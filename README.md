@@ -7,7 +7,7 @@
 
 * [Oliver Rittmann](mailto:o.rittmann@lse.ac.uk), *Office hours*: Fridays 15:00–17:00, CON.2.13 or Zoom
 * [Zach Dickson](mailto:z.dickson@lse.ac.uk), *Office hours*: TBA
-* [Ed Kelly](mailto:e.b.kelly1@lse.ac.uk), *Office hours*: Fridays 9:00–12:00, CON.1.07G/H or Zoom
+* [Ed Kelly](mailto:e.b.kelly1@lse.ac.uk), *Office hours*: Thursdays 9:00–11:00, CON.2.16 or Zoom
 * Federico Perlino (GTA)
 
 ## Course Information
