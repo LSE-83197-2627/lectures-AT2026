@@ -92,7 +92,7 @@ In-term problem sets and the final quiz are individual unless we instruct you ot
 
 Violation of the plagiarism policy for the course will be dealt with in accordance with the [LSE Regulations on Assessment Offences](https://info.lse.ac.uk/Staff/Divisions/Academic-Registrars-Division/Teaching-Quality-Assurance-and-Review-Office/Assets/Documents/Calendar/RegulationsAssessmentOffences-Plagiarism.pdf).
 
-## Instructors
+## Our Team
 
 <table>
 <tr>
