@@ -160,6 +160,9 @@
 .reveal .jp-RenderedHTMLCommon ul ul { list-style-type: "–"; }
 .reveal .jp-RenderedHTMLCommon ul ul > li { padding-left: 0.4em; }
 .reveal .jp-RenderedHTMLCommon li::marker { color: #7cb083; }
+/* Clay bullets for a single list, e.g. inside a clay card: <ul class="clay-bullets">.
+   Inline styles cannot reach ::marker, hence a class. */
+.reveal .jp-RenderedHTMLCommon .clay-bullets li::marker { color: #b0603a; }
 .reveal .jp-RenderedHTMLCommon p { margin-bottom: 0.7em; }
 
 /* Math (MathJax 2/3, KaTeX) */
@@ -197,6 +200,7 @@ details > summary { font-size: 0.75em; }
 .reveal .img-grid figure { margin: 0; }
 .reveal .img-grid img {
   display: block;
+  width: auto !important;  /* see .img-card img */
   max-width: 100%;
   max-height: 250px;
   border: 1px solid #e5e5e5;
@@ -206,6 +210,67 @@ details > summary { font-size: 0.75em; }
   margin-top: 6px;
   font-size: 0.65em;
   color: #5f5f5f;
+}
+
+/* Image card: an image in a white box with the same shadow as the text cards.
+   The box shrinks to the image, and the image is capped so it fits the slide.
+     <div class="img-card">
+
+     ![Alt text](figs/image.png)
+     <div class="caption">Image source: ...</div>
+
+     </div>
+   Add "short" (<div class="img-card short">) for slides with text above the
+   image, "center" to centre the card. */
+.reveal .img-card {
+  box-sizing: border-box;
+  width: fit-content;
+  max-width: 100%;
+  margin: 12px 0;
+  padding: 12px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.reveal .img-card.center { margin-left: auto; margin-right: auto; }
+.reveal .img-card p { margin: 0; }
+.reveal .img-card img {
+  display: block;
+  /* Ignore a width attribute on the img: it only shrinks the image in the
+     notebook view; on the slide, the caps below decide the size. */
+  width: auto !important;
+  max-width: 100%;
+  max-height: 460px;
+  margin: 0;
+  border-radius: 4px;
+}
+.reveal .img-card.short img { max-height: 320px; }
+.reveal .img-card .caption {
+  margin-top: 8px;
+  font-size: 0.65em;
+  color: #5f5f5f;
+}
+
+/* Section dividers: a small label above the section's h1.
+     <div class="section-label">Part 1</div>
+
+     # Section Title                                                            */
+.reveal .jp-RenderedHTMLCommon .section-label {
+  margin-bottom: 0.2em;
+  font-size: 0.8em;
+  font-weight: bold;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #b0603a;
+}
+.reveal .jp-RenderedHTMLCommon .section-label + h1 { margin-top: 0; }
+
+/* Text running bottom to top, e.g. a narrow "Reading week" box between cards:
+   <div class="vertical-label" style="...">Week 6 &middot; Reading week</div>.
+   JupyterLab strips writing-mode and transform from inline styles, hence a class. */
+.reveal .vertical-label {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
 }
 
 .reveal .hl, .reveal .hl-green, .reveal .hl-yellow, .reveal .hl-blue, .reveal .hl-orange {
