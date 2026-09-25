@@ -17,10 +17,9 @@ SIZE = 200   # output size in px; the README shows them smaller
 SCALE = 4    # draw the mask larger, then shrink, for smooth edges
 
 PHOTOS = {"oliver": "oliver.webp", "zach": "zach.webp", "ed": "ed.webp",
-          "serena": "serena.jpg.webp"}
+          "serena": "serena.jpg.webp", "kevin": "kevin.webp"}
 # name: (initials, background, text colour), matching the slide theme
-INITIALS = {"federico": ("FP", "#f7efe6", "#b0603a"),
-            "kevin": ("KK", "#eeeeee", "#858585")}
+INITIALS = {"federico": ("FP", "#f7efe6", "#b0603a")}
 FONT = "/System/Library/Fonts/Supplemental/Arial Bold.ttf"
 
 
