@@ -1,14 +1,14 @@
-# MY470 Computer Programming
-
-
-## Autumn Term 2026
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/readme-banner-dark.png">
+  <img src="assets/readme-banner-light.png" width="900" alt="LSE, Autumn Term 2026: MY470 Computer Programming. The fundamentals of computer programming, computer languages, object-oriented programming, and algorithms in Python, with applications from computational social science.">
+</picture>
 
 ## Course Information
 
-* Lectures take place on:
+* 🎓 Lectures take place on:
   * Mondays 13:00–15:00 in CLM.5.02
 
-* Seminars take place on:
+* 💻 Seminars take place on:
   * Tuesdays 10:00–11:30 in CKK.1.09
   * Tuesdays 11:30–13:00 in CKK.1.09
   * Tuesdays 15:00–16:30 in CBG.2.02
@@ -19,7 +19,18 @@ No lecture or classes will take place during School Reading Week 6.
 
 ## Course Description
 
-This course introduces students to the fundamentals of computer programming as students design, write, and debug computer programs using the programming language Python. The course will also cover the foundations of computer languages, algorithms, functions, variables, object orientation, scoping, and assignment. The course will rely on practical examples from computational social science and social data science.
+This course introduces the fundamentals of computer programming, the foundations of computer languages, object-oriented programming, and algorithms, using the programming language Python. Throughout, you will practise on applications from computational social science and social data science.
+
+### Learning Goals
+
+By the end of this course, you will be able to:
+
+* 🧠 **Think computationally:** break a problem into smaller tasks and design step-by-step solutions
+* 📚 **Use the vocabulary of programming:** explain concepts such as data types, control flow, functions, and classes
+* 👀 **Read code:** understand and explain what a given Python program does
+* ✍️ **Write working code:** write Python programs that solve a given problem, also by hand
+* 🧹 **Write good code:** write code that is legible, modular, and efficient
+* 🪞 **Reflect on your learning:** use AI deliberately and reflect on how it supports or hinders your learning
 
 ## Organization
 
@@ -31,35 +42,37 @@ This is an introductory class and no prior experience with programming is requir
 
 ## Software
 
-The course will use Python. We will use the Anaconda distribution to install Python and manage packages and Visual Studio Code to write code. We will further use RStudio to write code in R. Lectures, class materials, and problem sets will be posted on GitHub. Students are expected to use GitHub also to submit problem sets.
+* 🐍 **Python** (Anaconda distribution) to learn basic concepts in computer science
+* 📊 **R** to experience another common programming language
+* 📝 **Visual Studio Code** and **RStudio** to write code
+* 🔀 **git** and **GitHub** to share course documents and problem sets: lectures, class materials, and problem sets are posted on GitHub, and you submit your problem sets via GitHub
 
 ## Materials
 
-The main course texts will be:
+📚 The main course texts will be:
 * Guttag, John V. *Introduction to Computation and Programming Using Python: With Application to Understanding Data*. MIT Press, 2016.
 * Miller, Bradley N. and David L. Ranum. [*Problem Solving with Algorithms and Data Structures Using Python*](https://runestone.academy/ns/books/published/pythonds/index.html).
 * Grolemund, Garrett and Hadley Wickham. [*R for Data Science*](http://r4ds.had.co.nz). O’Reilly, 2016.
 
-Additional resources include:
-* [Intermediate and advanced Python documentation](http://docs.python.org/3/)
-* [Python Wikibook](https://en.wikibooks.org/wiki/Python_Programming)
-* Matthes, Eric. [*Python Crash Course Cheat Sheet*](https://ehmatthes.github.io/pcc_2e/cheat_sheets/cheat_sheets/).
-* [Mimo](https://mimo.org/courses/learn-python): Like Duolingo, but for Python (and other programming languages)
+🧭 Additional resources for learning and practising Python (documentation, exercises, online courses, algorithm visualisations, and tutorials for Python packages) are collected in [resources.md](resources.md).
 
 ## Assessment
 
 Four problem sets (60%) and an in-class quiz (40%). 
 
-Students will be expected to produce five problem sets in the AT, due at the beginning of weeks 3, 4, 5, 7, and 8. The first problem set is formative. The remaining four problem sets will be marked, and will provide 60% of the mark. The problem sets will be distributed by Monday evening and due at 12:00 noon the following Monday. 
+Students will be expected to produce five problem sets in the AT, due at the beginning of weeks 3, 4, 5, 7, and 8. The first problem set is formative. The remaining four problem sets will be marked, and will provide 60% of the mark. The problem sets will be distributed by Monday evening and due at 12:00 noon the following Monday. We will try our best to give you marks and comments by the first Friday after submission.
 
 The quiz, worth 40% of the course mark, will be completed in class in week 11. 
 
-Doctoral students registered for MY570 have the option to complete a substantive project of their own choice in place of the take home exam. You will be required to develop Python software that addresses a sufficiently complex computational social science task. Examples of possible projects include a software package that collects and analyses online data, an experimental game, or an agent-based model. The project should be approved by the instructors, so please get in touch with us well in advance.
+Doctoral students registered for MY570 have the option to complete a substantive project of their own choice in place of the quiz. You will be required to develop Python software that addresses a sufficiently complex computational social science task. Examples of possible projects include a software package that collects and analyses online data, an experimental game, or an agent-based model. The project should be approved by the instructors, so please get in touch with us well in advance.
 
 Please note that the deadlines are final. Late submissions for the weekly problem sets will automatically receive score 0, except in the case of an extension requested in advance for valid documented legal or medical reasons. More information can be found [here](https://info.lse.ac.uk/current-students/services/assessment-and-results/exceptional-circumstances/extension-policy).
 
 ## Assessment Criteria
-Your code will be evaluated both on whether it completes the task and on the extent to which it is written using the concepts, paradigms, and best practices covered in the course, most notably, legibility, modularity, and optimization.
+
+Every problem set submission consists of two parts: your solution, and a declaration of AI use with, if applicable, a brief reflection on how your use of AI facilitated or hindered your learning (see the [AI Policy](#ai-policy)). **Both parts influence your mark.**
+
+**Your solution.** Your code will be evaluated both on whether it completes the task and on the extent to which it is written using the concepts, paradigms, and best practices covered in the course, most notably, legibility, modularity, and optimization.
 
 |**Mark**         |**Criteria**   |
 |:----------------|:--------------|
@@ -67,28 +80,53 @@ Your code will be evaluated both on whether it completes the task and on the ext
 |Merit (60-69)    |The code runs, does what it is expected to, and is modular and legible |
 |Distinction (70-100) |The code runs, does what it is expected to, and is modular, legible, and optimized |
 
+**Your reflection.** When marking your reflection, we look for evidence that you put effort into your learning and skill development.
+
 
 ## AI Policy
 
-LSE asks academic departments or course convenors to specify one of three possible positions on the authorised use of generative AI in assessment. This course takes position 1: **No authorised use of generative AI in assessment**, unless the convenor specifies otherwise. The use of AI tools for grammar and spell-checking is not included in the full prohibition under Position 1.
+LSE asks academic departments or course convenors to specify one of three possible positions on the authorised use of generative AI in assessment:
 
-This means that you are not allowed to use Generative AI tools such as ChatGPT, Claude or Copilot to solve the problem sets.
+1. No authorised use of generative AI in assessment (the use of AI tools for grammar and spell-checking is not included in this prohibition)
+2. Limited authorised use of generative AI in assessment
+3. Full authorised use of generative AI in assessment
+
+**This course takes Position 2: limited authorised use of generative AI for all problem sets.**
+
+**Why limited use?** The problem sets are designed to help you develop computational thinking, problem solving, and programming skills. We care much more about your learning progress than about submissions of flawless code. Unrestricted AI use would let you produce flawless code, but we are concerned that it would hinder your learning. Used well, however, AI can also help you learn.
+
+**✅ Allowed use of GenAI:**
+
+* You are stuck on a bug and, after consulting the course materials, still have no idea how to proceed
+  <details><summary>Example prompt</summary><blockquote>I am writing Python code to [task description]. I wrote the following code to solve this task. When I try to execute the code, I get the following error message: [...]. I want to understand what is wrong with my code and how I can solve the problem.</blockquote></details>
+* You have written code yourself, it works, and you want to know whether it could be better
+  <details><summary>Example prompt</summary><blockquote>I am writing Python code to [task description]. I wrote the following code to solve this task. I already confirmed that the code runs as intended. However, I wonder whether I can further optimize the program. Please give me feedback on the program I wrote.</blockquote></details>
+
+**🚫 Not allowed use of GenAI:**
+
+* **Task delegation:** asking a chatbot to solve a task or subtask of a problem set
+  <details><summary>Example prompt</summary><blockquote>I need to solve the following exercise: [task description]. Please write a Python program that solves this exercise.</blockquote></details>
+* **Accepting AI answers without verification:** it may not be obvious to novices, but when marking we can sometimes spot when code was uncritically copy-pasted from chatbots
+* **Undeclared AI use:** any AI use you do not declare in your submission
+
+Any evidence of uses of GenAI that are not allowed will be penalised through the deduction of points.
+
+**Declaring and reflecting on AI use.** Every problem set submission consists of two parts:
+
+1. Your solution to the exercises specified in the problem set
+2. A declaration of AI use and, if applicable, a brief reflection on how your use of AI facilitated or hindered your learning
+
+Both parts influence your mark. When marking your reflection, we look for evidence that you put effort into your learning and skill development.
 
 ## Collaboration and Plagiarism Policy
 
-In-term problem sets and the final quiz are individual unless we instruct you otherwise. For all summative assessment, you need to write the code entirely by yourself (or together with your partner if you have been assigned one).
+Problem sets and the quiz are individual unless we instruct you otherwise. For individual problem sets:
 
-**You are NOT ALLOWED to:**
-* Talk about solutions to the problem sets and quiz with others
-* Show your solutions to other students
-* View and copy code from other students (current or past)
-* View and copy example solutions that may have leaked
-* Ask friends, family, or roommates for help with problem sets
-* Post questions related to the problem sets on Q&A sites such as Stack Overflow
+* **Peers, friends, family, roommates, etc.:** the same principles apply as for AI (see the [AI Policy](#ai-policy)). Collective debugging and peer feedback foster learning and are allowed (if you do this, reflect on it in your statement); copying solutions from others does not contribute to your learning experience, is treated as plagiarism, and is not allowed.
+  * You take full responsibility for what you submit.
+* **Online resources:** you can search for general advice (e.g. on Stack Overflow), but always give credit in comments if you borrow large chunks of code or non-standard solutions.
 
-**You may:**
-* Use general online resources such as Stack Overflow or Python documentation for general queries (e.g. "how to unpack a tuple"). However, if you borrow substantive blocks of code or specific solutions from online forums or blogs, you need to cite your source in the comments.
-* Use the forum "Clarifying Questions about Assignments" on the course Moodle site to ask and answer questions about the instructions in the problem sets.
+💬 **Questions about the problem set instructions?** Ask on the Moodle forum "Clarifying Questions about Assignments" (but not about the solutions!).
 
 Violation of the plagiarism policy for the course will be dealt with in accordance with the [LSE Regulations on Assessment Offences](https://info.lse.ac.uk/Staff/Divisions/Academic-Registrars-Division/Teaching-Quality-Assurance-and-Review-Office/Assets/Documents/Calendar/RegulationsAssessmentOffences-Plagiarism.pdf).
 
@@ -149,19 +187,22 @@ Book office hours via StudentHub.
 
 ## Communication Channels
 
-**Questions about the content:**
+**🎓 Questions about the content:**
 * Ask during the lecture sessions or your seminar
 * Schedule office hours with Oliver, Zach, or Ed
 
-**Questions about the upcoming problem set:**
+**💬 Questions about the upcoming problem set:**
 * Post a question on the Moodle forum "Clarifying questions about assignments" (no code allowed!)
 
-**Questions about your marked problem set:**
+**🗓️ Questions about your marked problem set:**
 * See the example answers to help you understand the comments
 * Schedule office hours with Oliver, Zach, or Ed
 
-**Personal emergencies (e.g. cannot access the problem set, cannot meet a deadline):**
+**✉️ Urgent problems (e.g. you cannot access GitHub to submit a problem set):**
 * E-mail Oliver
+
+**✉️ Deadline extensions:**
+* E-mail [methodology.admin@lse.ac.uk](mailto:methodology.admin@lse.ac.uk)
 
 
 ## Schedule
@@ -248,7 +289,7 @@ Object-oriented programming is a programming paradigm that helps increase modula
 ---
 ### Week 7. Testing and Debugging in Python
 
-Writing computer programs is easy but making them work properly is hard. We test programs to check if they work as intended and we debug them when we find out that they don’t. In this lecture, we will discuss different ways to test and debug programs. We will cover common error messages and how to catch them with `try`, `except`, `raise`, and `assert`. We will also introduce GitHub Copilot as a useful tool for writing code.
+Writing computer programs is easy but making them work properly is hard. We test programs to check if they work as intended and we debug them when we find out that they don’t. In this lecture, we will discuss different ways to test and debug programs. We will cover common error messages and how to catch them with `try`, `except`, `raise`, and `assert`.
 
 * *Readings*
   * Guttag. Chapters 6–7, pp.85–108.
@@ -295,7 +336,6 @@ We will use the concepts and approaches introduced in the previous lecture to lo
   * Bradley and Ranum. [Chapter 6](https://runestone.academy/ns/books/published/pythonds/SortSearch/toctree.html).
 * [*Lecture*](wk10/MY470_wk10_lecture.ipynb)
 * *Lab*
-  * In-class quiz
   
 ---
 ### Week 11. Quiz & Graph Algorithms
