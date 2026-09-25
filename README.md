@@ -3,61 +3,6 @@
 
 ## Autumn Term 2026
 
-## Instructors
-
-<table>
-<tr>
-<td align="center" valign="top" width="25%">
-<img src="wk1/figs/instructors/round/oliver.png" width="90" alt="Oliver Rittmann"><br>
-<b>Oliver Rittmann</b><br>
-<sub><i>Assistant Professor in Computational Social Science</i></sub><br>
-Course Leader<br>
-<sub><a href="mailto:o.rittmann@lse.ac.uk">o.rittmann@lse.ac.uk</a></sub><br><br>
-<sub><b>Office hours</b><br>Fridays 15:00–17:00<br>CON.2.13 or Zoom</sub>
-</td>
-<td align="center" valign="top" width="25%">
-<img src="wk1/figs/instructors/round/zach.png" width="90" alt="Zach Dickson"><br>
-<b>Zach Dickson</b><br>
-<sub><i>LSE Fellow in Quantitative Methodology</i></sub><br>
-Class Teacher<br>
-<sub><a href="mailto:z.dickson@lse.ac.uk">z.dickson@lse.ac.uk</a></sub><br><br>
-<sub><b>Office hours</b><br>TBA</sub>
-</td>
-<td align="center" valign="top" width="25%">
-<img src="wk1/figs/instructors/round/ed.png" width="90" alt="Ed Kelly"><br>
-<b>Ed Kelly</b><br>
-<sub><i>LSE Fellow in Advanced Quantitative Methods</i></sub><br>
-Class Teacher<br>
-<sub><a href="mailto:e.b.kelly1@lse.ac.uk">e.b.kelly1@lse.ac.uk</a></sub><br><br>
-<sub><b>Office hours</b><br>Thursdays 9:00–11:00<br>CON.2.16 or Zoom</sub>
-</td>
-<td align="center" valign="top" width="25%">
-<img src="wk1/figs/instructors/round/federico.png" width="90" alt="Federico Perlino"><br>
-<b>Federico Perlino</b><br>
-<sub><i>Graduate Teaching Assistant</i></sub><br>
-Class Teacher
-</td>
-</tr>
-<tr>
-<td align="center" valign="top" width="50%" colspan="2">
-<img src="wk1/figs/instructors/round/serena.png" width="90" alt="Serena Ngai"><br>
-<b>Serena Ngai</b><br>
-<sub><i>Teaching and Assessment Officer</i></sub><br>
-Marking and assessment administration<br>
-<sub><a href="mailto:methodology.admin@lse.ac.uk">methodology.admin@lse.ac.uk</a></sub>
-</td>
-<td align="center" valign="top" width="50%" colspan="2">
-<img src="wk1/figs/instructors/round/kevin.png" width="90" alt="Kevin Kittoe"><br>
-<b>Kevin Kittoe</b><br>
-<sub><i>Teaching and Operations Officer</i></sub><br>
-Teaching logistics and operations<br>
-<sub><a href="mailto:methodology.admin@lse.ac.uk">methodology.admin@lse.ac.uk</a></sub>
-</td>
-</tr>
-</table>
-
-Book office hours via StudentHub.
-
 ## Course Information
 
 * Lectures take place on:
@@ -146,6 +91,61 @@ In-term problem sets and the final quiz are individual unless we instruct you ot
 * Use the forum "Clarifying Questions about Assignments" on the course Moodle site to ask and answer questions about the instructions in the problem sets.
 
 Violation of the plagiarism policy for the course will be dealt with in accordance with the [LSE Regulations on Assessment Offences](https://info.lse.ac.uk/Staff/Divisions/Academic-Registrars-Division/Teaching-Quality-Assurance-and-Review-Office/Assets/Documents/Calendar/RegulationsAssessmentOffences-Plagiarism.pdf).
+
+## Instructors
+
+<table>
+<tr>
+<td align="center" valign="top" width="25%">
+<img src="wk1/figs/instructors/round/oliver.png" width="90" alt="Oliver Rittmann"><br>
+<b>Oliver Rittmann</b><br>
+<sub><i>Assistant Professor in Computational Social Science</i></sub><br>
+Course Leader<br>
+<sub><a href="mailto:o.rittmann@lse.ac.uk">o.rittmann@lse.ac.uk</a></sub><br><br>
+<sub><b>Office hours</b><br>Fridays 15:00–17:00<br>CON.2.13 or Zoom</sub>
+</td>
+<td align="center" valign="top" width="25%">
+<img src="wk1/figs/instructors/round/zach.png" width="90" alt="Zach Dickson"><br>
+<b>Zach Dickson</b><br>
+<sub><i>LSE Fellow in Quantitative Methodology</i></sub><br>
+Class Teacher<br>
+<sub><a href="mailto:z.dickson@lse.ac.uk">z.dickson@lse.ac.uk</a></sub><br><br>
+<sub><b>Office hours</b><br>TBA</sub>
+</td>
+<td align="center" valign="top" width="25%">
+<img src="wk1/figs/instructors/round/ed.png" width="90" alt="Ed Kelly"><br>
+<b>Ed Kelly</b><br>
+<sub><i>LSE Fellow in Advanced Quantitative Methods</i></sub><br>
+Class Teacher<br>
+<sub><a href="mailto:e.b.kelly1@lse.ac.uk">e.b.kelly1@lse.ac.uk</a></sub><br><br>
+<sub><b>Office hours</b><br>Thursdays 9:00–11:00<br>CON.2.16 or Zoom</sub>
+</td>
+<td align="center" valign="top" width="25%">
+<img src="wk1/figs/instructors/round/federico.png" width="90" alt="Federico Perlino"><br>
+<b>Federico Perlino</b><br>
+<sub><i>Graduate Teaching Assistant</i></sub><br>
+Class Teacher
+</td>
+</tr>
+<tr>
+<td align="center" valign="top" width="50%" colspan="2">
+<img src="wk1/figs/instructors/round/serena.png" width="90" alt="Serena Ngai"><br>
+<b>Serena Ngai</b><br>
+<sub><i>Teaching and Assessment Officer</i></sub><br>
+Marking and assessment administration<br>
+<sub><a href="mailto:methodology.admin@lse.ac.uk">methodology.admin@lse.ac.uk</a></sub>
+</td>
+<td align="center" valign="top" width="50%" colspan="2">
+<img src="wk1/figs/instructors/round/kevin.png" width="90" alt="Kevin Kittoe"><br>
+<b>Kevin Kittoe</b><br>
+<sub><i>Teaching and Operations Officer</i></sub><br>
+Teaching logistics and operations<br>
+<sub><a href="mailto:methodology.admin@lse.ac.uk">methodology.admin@lse.ac.uk</a></sub>
+</td>
+</tr>
+</table>
+
+Book office hours via StudentHub.
 
 ## Communication Channels
 
