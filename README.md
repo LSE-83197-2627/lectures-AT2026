@@ -5,10 +5,10 @@
 
 ## Course Information
 
-* 🎓 Lectures take place on:
+* Lectures take place on:
   * Mondays 13:00–15:00 in CLM.5.02
 
-* 💻 Seminars take place on:
+* Seminars take place on:
   * Tuesdays 10:00–11:30 in CKK.1.09
   * Tuesdays 11:30–13:00 in CKK.1.09
   * Tuesdays 15:00–16:30 in CBG.2.02
@@ -25,12 +25,12 @@ This course introduces the fundamentals of computer programming, the foundations
 
 By the end of this course, you will be able to:
 
-* 🧠 **Think computationally:** break a problem into smaller tasks and design step-by-step solutions
-* 📚 **Use the vocabulary of programming:** explain concepts such as data types, control flow, functions, and classes
-* 👀 **Read code:** understand and explain what a given Python program does
-* ✍️ **Write working code:** write Python programs that solve a given problem, also by hand
-* 🧹 **Write good code:** write code that is legible, modular, and efficient
-* 🪞 **Reflect on your learning:** use AI deliberately and reflect on how it supports or hinders your learning
+* **Think computationally:** break a problem into smaller tasks and design step-by-step solutions
+* **Use the vocabulary of programming:** explain concepts such as data types, control flow, functions, and classes
+* **Read code:** understand and explain what a given Python program does
+* **Write working code:** write Python programs that solve a given problem, also by hand
+* **Write good code:** write code that is legible, modular, and efficient
+* **Reflect on your learning:** use AI deliberately and reflect on how it supports or hinders your learning
 
 ## Organization
 
@@ -42,19 +42,19 @@ This is an introductory class and no prior experience with programming is requir
 
 ## Software
 
-* 🐍 **Python** (Anaconda distribution) to learn basic concepts in computer science
-* 📊 **R** to experience another common programming language
-* 📝 **Visual Studio Code** and **RStudio** to write code
-* 🔀 **git** and **GitHub** to share course documents and problem sets: lectures, class materials, and problem sets are posted on GitHub, and you submit your problem sets via GitHub
+* **Python** (Anaconda distribution) to learn basic concepts in computer science
+* **R** to experience another common programming language
+* **Visual Studio Code** and **RStudio** to write code
+* **git** and **GitHub** to share course documents and problem sets: lectures, class materials, and problem sets are posted on GitHub, and you submit your problem sets via GitHub
 
 ## Materials
 
-📚 The main course texts will be:
+The main course texts will be:
 * Guttag, John V. *Introduction to Computation and Programming Using Python: With Application to Understanding Data*. MIT Press, 2016.
 * Miller, Bradley N. and David L. Ranum. [*Problem Solving with Algorithms and Data Structures Using Python*](https://runestone.academy/ns/books/published/pythonds/index.html).
 * Grolemund, Garrett and Hadley Wickham. [*R for Data Science*](http://r4ds.had.co.nz). O’Reilly, 2016.
 
-🧭 Additional resources for learning and practising Python (documentation, exercises, online courses, algorithm visualisations, and tutorials for Python packages) are collected in [resources.md](resources.md).
+Additional resources for learning and practising Python (documentation, exercises, online courses, algorithm visualisations, and tutorials for Python packages) are collected in [resources.md](resources.md).
 
 ## Assessment
 
@@ -126,7 +126,7 @@ Problem sets and the quiz are individual unless we instruct you otherwise. For i
   * You take full responsibility for what you submit.
 * **Online resources:** you can search for general advice (e.g. on Stack Overflow), but always give credit in comments if you borrow large chunks of code or non-standard solutions.
 
-💬 **Questions about the problem set instructions?** Ask on the Moodle forum "Clarifying Questions about Assignments" (but not about the solutions!).
+**Questions about the problem set instructions?** Ask on the Moodle forum "Clarifying Questions about Assignments" (but not about the solutions!).
 
 Violation of the plagiarism policy for the course will be dealt with in accordance with the [LSE Regulations on Assessment Offences](https://info.lse.ac.uk/Staff/Divisions/Academic-Registrars-Division/Teaching-Quality-Assurance-and-Review-Office/Assets/Documents/Calendar/RegulationsAssessmentOffences-Plagiarism.pdf).
 
