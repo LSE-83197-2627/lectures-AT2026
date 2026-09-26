@@ -142,6 +142,26 @@
   font-size: 0.85em;
   color: #5f5f5f;
 }
+/* Code blocks in markdown (```…```), e.g. terminal commands: a cream box like the
+   code cells, left-aligned (reveal centres pre at 90% width with a shadow by default). */
+.reveal .jp-RenderedHTMLCommon pre {
+  box-sizing: border-box;
+  width: auto;
+  margin: 0.35em 0 0.6em 0;
+  padding: 8px 14px;
+  border-radius: 6px;
+  background-color: #f7efe6;
+  box-shadow: none;
+  font-size: 0.75em;
+  line-height: 1.45;
+}
+.reveal .jp-RenderedHTMLCommon pre code {
+  padding: 0;
+  background: none;
+  font-size: 1em;
+  color: #212121;
+}
+
 /* Inline code in markdown gets a small pill; code blocks keep their own box. */
 .reveal .jp-RenderedHTMLCommon :not(pre) > code {
   padding: 0.1em 0.35em;
