@@ -1,2 +1,5 @@
 .ipynb_checkpoints/
 .DS_Store
+
+# Pre-redesign copies kept locally for comparison
+*_before_redesign.ipynb
