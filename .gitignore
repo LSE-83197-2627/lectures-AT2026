@@ -3,3 +3,6 @@
 
 # Pre-redesign copies kept locally for comparison
 *_before_redesign.ipynb
+
+# Editor layout state (cell sizes), per user
+*.ipynb.layout
