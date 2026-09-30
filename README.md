@@ -156,7 +156,7 @@ Class Teacher<br>
 <sub><i>LSE Fellow in Advanced Quantitative Methods</i></sub><br>
 Class Teacher<br>
 <sub><a href="mailto:e.b.kelly1@lse.ac.uk">e.b.kelly1@lse.ac.uk</a></sub><br><br>
-<sub><b>Office hours</b><br>Thursdays 9:00–11:00<br>CON.2.16 or Zoom</sub>
+<sub><b>Office hours</b><br>Thursday 9:00–11:00 in week 1, Monday 9:00–11:00 from week 2 onwards<br>CON.2.16 or Zoom</sub>
 </td>
 <td align="center" valign="top" width="25%">
 <img src="wk1/figs/instructors/round/federico.png" width="90" alt="Federico Perlino"><br>
