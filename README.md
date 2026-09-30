@@ -50,7 +50,7 @@ This is an introductory class and no prior experience with programming is requir
 ## Materials
 
 The main course texts will be:
-* Guttag, John V. *Introduction to Computation and Programming Using Python: With Application to Understanding Data*. MIT Press, 2016.
+* Guttag, John V. *Introduction to Computation and Programming Using Python: With Application to Understanding Data* (Second Edition). MIT Press, 2016.
 * Miller, Bradley N. and David L. Ranum. [*Problem Solving with Algorithms and Data Structures Using Python*](https://runestone.academy/ns/books/published/pythonds/index.html).
 * Grolemund, Garrett and Hadley Wickham. [*R for Data Science*](http://r4ds.had.co.nz). O’Reilly, 2016.
 
