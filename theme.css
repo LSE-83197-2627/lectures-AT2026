@@ -71,6 +71,19 @@
 .reveal .jp-Notebook .jp-Cell.jp-mod-selected,
 .reveal .jp-Cell.jp-mod-active { background: transparent !important; }
 
+/* Slides taller than the screen (e.g. after live coding in the empty code cells) can be
+   scrolled with the mouse wheel / trackpad instead of being cut off at the bottom. */
+.reveal .slides > section.present { overflow-y: auto !important; }
+
+/* No code ligatures: JetBrains Mono would draw != as ≠, <= as ≤ etc., but students
+   need to see the characters they have to type. The letter-spacing keeps a visible gap
+   between repeated wide characters (== would otherwise read as one long bar). */
+.reveal code, .reveal pre, .reveal .cm-editor, .reveal .jp-OutputArea-output {
+  font-variant-ligatures: none !important;
+  font-feature-settings: "liga" 0, "calt" 0 !important;
+  letter-spacing: 0.06em;
+}
+
 /* Code cells as cards: pale clay background, rounded corners, thin border. The
    border turns green only while the cell is being edited. JupyterLab paints
    the editor through these variables, so they are set rather than overridden. */
